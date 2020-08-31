@@ -24,4 +24,4 @@ jobs:
       with:
         api-key: ${{ secrets.ALEXA_KEY }}
         api-secret: ${{ secrets.ALEXA_SECRET }}
-        message: "A new issue was opened number ${{ github.event.issue.number }}. ${{ github.event.issue.title }}"
+        message: "A new issue has been opened. Issue number ${{ github.event.issue.number }}. ${{ github.event.issue.title }}"
