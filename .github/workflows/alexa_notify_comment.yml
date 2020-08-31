@@ -23,4 +23,4 @@ jobs:
       with:
         api-key: ${{ secrets.ALEXA_KEY }}
         api-secret: ${{ secrets.ALEXA_SECRET }}
-        github-secret: ${{ secrets.GITHUB_TOKEN }}
+        message: "A new comment was added to issue number ${{ github.event.issue.number }}. ${{ github.event.issue_comment.body }}"
